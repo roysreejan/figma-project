@@ -20,7 +20,7 @@ const Navbar = () => {
   ];
   return (
     <ul
-      className={`${inter.className} m-[66px] flex items-center justify-end h-[24px] font-medium text-[20px] space-x-6`}
+      className={`${inter.className} m-[66px] flex items-center justify-end h-[24px] font-medium text-[20px] space-x-13`}
     >
       {navItems.map((item, i) => (
         <li key={i}>
