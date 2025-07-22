@@ -1,36 +1,111 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Figma Project
+
+Figma Project is a portfolio and blog web application built with Next.js and TypeScript. It features a modern, responsive UI inspired by Figma designs, and showcases recent posts, featured works, and social links. The project uses Tailwind CSS for styling and leverages Next.js App Router for routing and layout.
+
+## Features
+
+- Responsive portfolio homepage with hero section
+- Recent posts and featured works sections
+- Social media links in the footer
+- Customizable theme colors and fonts
+- Modular, reusable React components
+- Optimized images with Next.js Image component
+- Font integration with next/font
+- ESLint and Prettier for code quality
+
+## Tech Stack
+
+- **Frontend**: Next.js, React, TypeScript
+- **Styling**: Tailwind CSS
+- **Fonts**: Geist, Heebo, Inter (via next/font)
+- **Icons**: react-icons
+- **Image Optimization**: Next.js Image
+- **Linting**: ESLint
+
+## Folder Structure
+
+```
+figma-project/
+├── public/                  # Static assets (SVGs, images)
+│   └── assets/              # Project images
+├── src/
+│   ├── app/                 # Next.js app directory (pages, layouts)
+│   │   ├── components/      # UI and feature components
+│   │   └── globals.css      # Global styles (Tailwind, custom CSS variables)
+├── .next/                   # Next.js build output (generated)
+├── .vscode/                 # VSCode settings
+├── .gitignore
+├── README.md
+├── eslint.config.mjs
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+```
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v16+ recommended)
+- npm, yarn, pnpm, or bun
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/roysreejan/figma-project
+   cd figma-project
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies:**
+   ```sh
+   npm install
+   # or
+   yarn install
+   # or
+   pnpm install
+   # or
+   bun install
+   ```
 
-## Learn More
+3. **Run the development server:**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   # or
+   pnpm dev
+   # or
+   bun dev
+   ```
+The app will run on [http://localhost:3000](http://localhost:3000).
 
-To learn more about Next.js, take a look at the following resources:
+## Customization
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Edit content and sections in [`src/app/page.tsx`](src/app/page.tsx)
+- Update global styles in [`src/app/globals.css`](src/app/globals.css)
+- Add or modify components in [`src/components/`](src/components/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+This project is ready to deploy on [Vercel](https://figma-project-design.vercel.app/) or any platform supporting Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+To deploy on Vercel:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Install the Vercel CLI:
+   ```sh
+   npm install -g vercel
+   ```
+2. Deploy:
+   ```sh
+   vercel
+   ```
+
+## License
+
+MIT
+
+## Author
+
+Sreejan Roy
